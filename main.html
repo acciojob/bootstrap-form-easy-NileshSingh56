@@ -10,7 +10,7 @@
 	<div class="container mt-5">
 		<h3 class="text-centre mb-4">Internship Form</h3>
 	
-	<form>
+	<form class="row g-3 needs-validation" novalidate>
 		<div class="row">
 			<div class="col-md-4 mb-3">
 				<label class="first-name-input" class="form-label">
@@ -18,19 +18,20 @@
 				<input type="text"
                            class="form-control"
                            id="first-name-input"
-                           placeholder="Enter your first name">
-				<div class="form-text">
+                           placeholder="Enter your first name"
+					required>
+				<div class="invalid-feedback">
 					Please enter your first name.
 				</div>
 			</div>
 			<div class="col-md-4 mb-3">
 				<label for="last-name-input" class="form-label">
 					Last Name</label>
-				<input type="text"
+				<input  required type="text"
 					    class="form-control"
 					    id="last-name-input"
 					    placeholder="Enter your last name">
-				<div class="form-text">
+				<div class="invalid-feedback">
 					Please enter your last name
 				</div>
 			</div>
@@ -38,48 +39,48 @@
 				<label for="email-input" class="form-label">
 					Email Address
 				</label>
-				<input type="email"
+				<input required type="email"
                            class="form-control"
                            id="email-input"
                            placeholder="Enter your email">
 
-                    <div class="form-text">
+                    <div class="invalid-feedback">
                         Please enter a valid email address.
                     </div>
                 </div>
 			<div class="col-md-4 mb-3">
 				<label for="college-input" class="form-label">
 					College</label>
-				<input type="text"
+				<input required type="text"
 					    id="college-input"
 					    class="form-control"
 					    placeholder="Enter your college name">
-				<div class="form-text">
+				<div class="invalid-feedback">
 					Please enter your college name.
 			</div> 
 			</div>
 			<div class="col-md-4 mb-3">
-				<label for="graduation-year-input" class="form-label">
+				<label for="grad-year-select" class="form-label">
 					Graduation Year</label>
-				<select class="form-select" id="graduation-year-input">
+				<select class="form-select" id="grad-year-select">
 					<option selected disabled>Choose...</option>
 					<option value=2020>2020</option>
 					<option value=2021>2021</option>
 					<option value=2022>2022</option>
 					<option value=2023>2023</option>
 				</select>
-				<div class="form-text">
+				<div class="invalid-feedback">
 					Please select your graduation year.
 			</div> 
 			</div>
 			<div class="col-md-4 mb-3">
 				<label for="roll-no-input" class="form-label">
 					Roll No.</label>
-				<input type="text"
+				<input required type="text"
 					    id="roll-no-input"
 					    class="form-control"
 					    placeholder="Enter your Roll no.">
-				<div class="form-text">
+				<div class="invalid-feedback">
 					Please provide a valid Roll no.
 			</div> 
 			</div>
@@ -96,7 +97,7 @@
                     I agree to the terms and conditions.
 
                 </label>
-			 <div class="form-text">
+			 <div class="invalid-feedback">
                     Please accept the terms and conditions.
 
                 </div>
